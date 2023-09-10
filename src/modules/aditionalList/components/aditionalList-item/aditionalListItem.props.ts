@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface AditionalNewsProps {
   image: string | StaticImageData;
-  number?: number;
+  number?: number | string;
   title: string;
   text: string;
   nav: string;

@@ -34,7 +34,7 @@ export const AditionalList: FC = () => {
       <ul className={styles.list}>
         {list.map((item, index) => (
           <AditionalListItem
-            props={{ ...item, number: index + 1 }}
+            props={{ ...item, number: `0${index + 1}` }}
             key={item.text}
           />
         ))}

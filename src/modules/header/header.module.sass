@@ -1,0 +1,32 @@
+@use "../../styles/_index" as *
+
+.main
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 auto
+  height: 40px
+  max-width: var(--desktop-width)
+  margin-top: 90px
+
+.linkList
+  display: flex
+  align-items: center
+  column-gap: 38px
+
+  li
+    list-style: none
+    color: var(--color-nutral-gray-blue)
+    transition: color 0.3s ease
+    height: 36px
+
+    &:hover
+      color: var(--color-prim-red)
+
+@media only screen and (max-width: $mobile-width)
+  .main
+    padding: 0 16px
+    margin: 24px 0
+
+  .linkList
+    display: none

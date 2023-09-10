@@ -1,0 +1,51 @@
+.hover
+  position: fixed
+  top: 0
+  left: 0
+  background: rgba(#000, 0)
+  height: 100vh
+  width: 100vw
+  transition: 0.2s background ease
+  pointer-events: none
+  z-index: 2
+
+  &_active
+    background: rgba(#000, 0.5)
+    pointer-events: all
+
+.wrapper
+  position: fixed
+
+  background: white
+  width: 100vw
+  height: 100vh
+  right: -100%
+  top: 0
+  z-index: 1
+  transition: 0.2s all ease
+
+.opener
+  position: fixed
+  top: 32px
+  right: 24px
+  z-index: 5
+
+.open
+  right: -30%
+  background: white
+
+.linkList
+  display: flex
+  flex-direction: column
+  align-items: left
+  column-gap: 38px
+  padding: 140px 24px
+
+  li
+    list-style: none
+    color: var(--color-nutral-very-gray-blue)
+    transition: color 0.3s ease
+    height: 40px
+
+    &:hover
+      color: var(--color-prim-red)

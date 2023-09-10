@@ -1,0 +1,21 @@
+@use "../../styles/_index" as *
+
+.main
+  background: var(--color-nutral-very-gray-blue)
+  width: -webkit-fill-available
+  padding: 40px 24px 0
+
+  h6
+    color: var(--color-gold)
+    font-size: 38px
+    font-style: normal
+    font-weight: 700
+    line-height: 26px
+    letter-spacing: 1.52px
+
+@media only screen and (max-width: $mobile-width)
+  .main
+    padding: 30px 24px 0
+
+    h6
+      font-size: 31px

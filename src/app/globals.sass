@@ -1,0 +1,41 @@
+@use "../styles/_index" as *
+
+:root
+  --max-width: 1440px
+  --desktop-width: 1110px
+  --mobile-width: $mobile-width
+  --border-radius: 12px
+  --font-mono: 'Inter', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace
+
+  --color-prim-orange: hsl(35, 77%, 62%)
+  --color-prim-red: hsl(5, 85%, 63%)
+
+  --color-gold: #EDAF63
+  --color-nutral-white: hsl(36, 100%, 99%)
+  --color-nutral-blue: hsl(233, 8%, 79%)
+  --color-nutral-gray-blue: hsl(236, 13%, 42%)
+  --color-nutral-very-gray-blue: hsl(240, 100%, 5%)
+
+  --font-weight-regular: 400
+  --font-weight-medium: 700
+  --font-weight-bold: 800
+
+  --font-size-paragraph: 15px
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+html,
+body
+  max-width: 100vw
+  overflow-x: hidden
+
+body
+  color: rgb(var(--foreground-rgb))
+  background: var(--color-nutral-white)
+
+a
+  color: inherit
+  text-decoration: none

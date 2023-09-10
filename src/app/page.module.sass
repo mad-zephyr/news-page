@@ -1,0 +1,20 @@
+@use "../styles/_index" as *
+
+.main
+  margin: 0 auto
+  border: 0
+  max-width: var(--desktop-width)
+  padding-top: 56px
+
+.hero
+  display: flex
+  column-gap: 28px
+  margin-bottom: 72px
+
+@media only screen and (max-width: $mobile-width)
+  .main
+    max-width: var(--mobile-width)
+    padding: 0 16px
+
+  .hero
+    flex-direction: column

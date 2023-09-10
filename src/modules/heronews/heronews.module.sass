@@ -1,0 +1,66 @@
+@use "../../styles/_index" as *
+
+.main
+  display: flex
+  flex-direction: column
+
+.cover
+  img
+    width: 730px
+    height: 300px
+
+.wrapper
+  display: flex
+  margin-top: 32px
+  column-gap: 28px
+
+  h1
+    width: 348px
+    font-size: 56px
+    font-style: normal
+    font-weight: var(--font-weight-bold)
+    color: var(--color-nutral-very-gray-blue)
+    line-height: 56px
+
+.description
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  column-gap: 28px
+  width: 350px
+
+  p
+    color: var(--color-nutral-gray-blue)
+    font-size: 15px
+    font-style: normal
+    font-weight: var(--font-weight-regular)
+    line-height: 26px
+
+@media only screen and (max-width: $mobile-width)
+  .main
+    margin-bottom: 64px
+
+  .wrapper
+    width: 100%
+    flex-direction: column
+    margin-top: 14px
+
+    h1
+      width: 100%
+      font-size: 42px
+      line-height: 1
+      margin-bottom: 18px
+
+  .cover
+    img
+      width: 100%
+      aspect-ratio: 1.14
+      height: auto
+      object-fit: cover
+
+  .description
+    width: 100%
+
+    p
+      line-height: 26px
+      margin-bottom: 24px
